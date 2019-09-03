@@ -1,0 +1,15 @@
+import java.util.LinkedHashMap;
+import java.util.List;
+import org.springframework.web.client.RestTemplate;	
+
+public class ListUserRepos {
+    public static void main(String[] args) {
+    	  RestTemplate restTemplate = new RestTemplate();
+          List<LinkedHashMap<String,String>> repos = restTemplate.getForObject("https://api.github.com/users/lavy0228/repos", List.class);
+          
+          for(LinkedHashMap<String,String>  repo : repos)
+          { 
+           	System.out.println(repo.get("name"));
+          }
+    }
+}
