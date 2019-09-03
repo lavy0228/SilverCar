@@ -1,0 +1,9 @@
+What concerns would you have from a testing perspective?
+  I would look into how to use Java and access the API securely over HTTP. Security is a big concern for me, and would be more comfortable if I can access the Repository using OAuth in the header itself than sending it in URL. Secondly, I would be paying attention to response codes and response headers and return messages to program the API properly. Any issues with codes and headers will break the code. Since all of the response is in JSON, having a JSON reader to read the data is vital.
+How would you go about tackling the QA for this work?
+  I would look at the API documentation to understand the different ways of using this API. I would understand the authentication mechanism and http response and return codes for various scenarios. Understanding the outputs and understanding the various functionalities and call would help to leverage the right functionality based on the test case.
+What sort of tests would be worth describing or worth automating?
+  Tests that could be implemented multiple times without human intervention is apt for automating. Stability of the message and message return is critical for automation, so I would not automate anything that is not stable. Stable application provides stable end points and consistency in outputs, without which, the test either ends up failing or we have to keep rewriting the API calls and fetches.
+What tools would you use?
+  I would use JAVA Spring to access Github or Javascript.
+See Part 2 for how you will provide us with your answers to these questions.
